@@ -1,0 +1,56 @@
+$clockTextColor: #FF8C00;
+$clockTextFontSize: 200%;
+$sunsetColor: black;
+$sunriseColor: white;
+
+/*Get rid of default browser focus */
+*:focus {
+    outline: 0;
+}
+
+body {
+	margin: 0px;
+	padding: 0px;
+	background-image: url("https://i.gyazo.com/2cf512b547edb6aed914694e2238e79e.jpgg");
+	background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Clock */
+#clockDisplay {
+  font-size: $clockTextFontSize;
+  color: 	$clockTextColor;
+  border: none;
+  shadow: 1px solid black;
+
+  //hides text selection
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+   user-select: none;
+}
+
+/*outer clock wrapper*/
+.wrapper {
+  width: 100%;
+  position: absolute;
+}
+
+/*center the inner wrapper */
+.center {
+  text-align: center;
+  margin-top: 50vh;
+  height: 5%;
+  width: 20%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// .weather{
+//   position: absolute;
+//   width: 20vw;
+//   height: 100vh;
+//   background-color: rgba(0,0,0,.3);
+// }
